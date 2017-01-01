@@ -1,0 +1,1 @@
+ALTER TABLE `#__gameserver` ADD `addedby` int NULL  AFTER `url` ;

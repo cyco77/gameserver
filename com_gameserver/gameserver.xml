@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade" >
+	<name>GameServer!</name>
+	<creationDate>20.03.2015</creationDate>
+	<author>Lars Hildebrandt</author>
+	<authorEmail>info@larshildebrandt.de</authorEmail>
+	<authorUrl>http://www.larshildebrandt.de</authorUrl>
+	<license>GNU/GPL</license>
+	<version>3.4.2</version>
+	<description>Komponente fuer das Anzeigen von verschiedenen Gameservern.</description>	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+		</sql>
+    </uninstall>
+	<update> <!-- Runs on update; New in 2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>	
+	<installfile>install.gameserver.php</installfile>
+	<languages>
+		<language tag="de-DE">sitelanguage/de-DE.com_gameserver.ini</language>
+		<language tag="en-GB">sitelanguage/en-GB.com_gameserver.ini</language>
+		<language tag="ru-RU">sitelanguage/ru-RU.com_gameserver.ini</language>
+    </languages>
+	<files folder="site">
+    <filename>controller.php</filename>
+	<filename>game.php</filename>
+    <filename>gamedataprovider.php</filename>
+    <filename>gameserver.php</filename>
+    <filename>index.html</filename>
+	<folder>controllers</folder>
+	<folder>views</folder>
+	<folder>models</folder>
+	<folder>images</folder>
+	<folder>renderer</folder>
+	<folder>script</folder>
+	<folder>style</folder>
+	</files>	
+	<administration>
+		<menu img="components/com_gameserver/images/icon_gameserver.png">COM_GAMESERVER_MENU</menu>
+		<files folder="admin">
+      <filename>gameserver.php</filename>
+      <filename>config.xml</filename>
+      <filename>controller.php</filename>
+      <filename>index.html</filename>
+      <filename>install.gameserver.php</filename>
+      <filename>updatecheck.php</filename>
+	  <folder>controllers</folder>
+	  <folder>images</folder>
+	  <folder>models</folder>
+	  <folder>style</folder>
+	  <folder>tables</folder>
+	  <folder>views</folder>
+	  <folder>sql</folder>
+		</files>    
+		<languages>
+			<language tag="de-DE">adminlanguage/de-DE.com_gameserver.ini</language>
+			<language tag="de-DE">adminlanguage/de-DE.com_gameserver.sys.ini</language>
+			<language tag="en-GB">adminlanguage/en-GB.com_gameserver.ini</language>
+			<language tag="en-GB">adminlanguage/en-GB.com_gameserver.sys.ini</language>
+			<language tag="ru-RU">adminlanguage/ru-RU.com_gameserver.ini</language>
+			<language tag="ru-RU">adminlanguage/ru-RU.com_gameserver.sys.ini</language>
+		</languages>    
+	</administration>
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="GameServer Update Site">http://www.larshildebrandt.de/_update/com_gameserver3-update.xml</server>
+	</updateservers>	
+</extension>

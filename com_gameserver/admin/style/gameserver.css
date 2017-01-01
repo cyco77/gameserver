@@ -1,0 +1,17 @@
+
+
+div.icon-48-gameserver
+{  
+    background-image: url("../images/logo_48.png");
+}
+
+#loading
+{
+    text-align:center;
+    vertical-align:middle;
+    border: 1px solid #CACACA;
+    background-color: #CFF9CE;
+    margin-bottom: 5px;
+    line-height: 20px;
+    width: 100%;
+}

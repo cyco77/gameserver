@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <fieldset name="common"
+		label="COM_GAMESERVER_CONFIGURATION_COMMON"
+		description="COM_GAMESERVER_CONFIGURATION_COMMON_DESC"
+	>
+    <field name="detailstylesheet" type="list" default="1" label="COM_GAMESERVER_CONFIGURATION_STYLESHEET" description="COM_GAMESERVER_CONFIGURATION_STYLESHEET_DESC">
+      <option value="0">COM_GAMESERVER_CONFIGURATION_STYLESHEET_NONE</option>
+      <option value="1">COM_GAMESERVER_CONFIGURATION_STYLESHEET_WHITE</option>
+      <option value="2">COM_GAMESERVER_CONFIGURATION_STYLESHEET_BLACK</option>
+    </field>
+
+    <field name="cacheinseconds" type="text" default="60" label="COM_GAMESERVER_CONFIGURATION_CACHE_IN_SECONDS" description="COM_GAMESERVER_CONFIGURATION_CACHE_IN_SECONDS_DESC" />
+
+    <field name="usemapimagesfromglobalmapgallery" type="radio" default="1" label="COM_GAMESERVER_CONFIGURATION_USEGLOBALGALLERY" description="COM_GAMESERVER_CONFIGURATION_USEGLOBALGALLERY_DESC">
+      <option value="1">COM_GAMESERVER_CONFIGURATION_USEGLOBALGALLERY_YES</option>
+      <option value="0">COM_GAMESERVER_CONFIGURATION_USEGLOBALGALLERY_NO</option>
+    </field>
+
+    <field name="loadjquery" type="radio" default="1" label="COM_GAMESERVER_CONFIGURATION_LOADJQUERY" description="COM_GAMESERVER_CONFIGURATION_LOADJQUERY_DESC">
+      <option value="1">COM_GAMESERVER_CONFIGURATION_LOADJQUERY_YES</option>
+      <option value="0">COM_GAMESERVER_CONFIGURATION_LOADJQUERY_NO</option>
+    </field>
+
+    <field name="hideipaddresses" type="radio" default="0" label="COM_GAMESERVER_CONFIGURATION_HIDEIPADDRESSES" description="COM_GAMESERVER_CONFIGURATION_HIDEIPADDRESSES_DESC">
+      <option value="1">COM_GAMESERVER_CONFIGURATION_HIDEIPADDRESSES_YES</option>
+      <option value="0">COM_GAMESERVER_CONFIGURATION_HIDEIPADDRESSES_NO</option>
+    </field>
+
+    <field name="showcopyrightlink" type="radio" default="1" label="COM_GAMESERVER_CONFIGURATION_SHOWCOPYRIGHT" description="COM_GAMESERVER_CONFIGURATION_SHOWCOPYRIGHT_DESC">
+      <option value="1">COM_GAMESERVER_CONFIGURATION_SHOWCOPYRIGHT_YES</option>
+      <option value="0">COM_GAMESERVER_CONFIGURATION_SHOWCOPYRIGHT_NO</option>
+    </field>
+  </fieldset>
+  
+  <fieldset name="serverlist"
+		label="COM_GAMESERVER_CONFIGURATION_SERVERLIST"
+		description="COM_GAMESERVER_CONFIGURATION_SERVERLIST_DESC"
+	>
+    <field name="blocksinrow" type="text" default="2" label="COM_GAMESERVER_CONFIGURATION_BLOCK_IN_ROW" description="COM_GAMESERVER_CONFIGURATION_BLOCK_IN_ROW_DESC" />
+
+    <field name="blockwidth" type="text" default="300" label="COM_GAMESERVER_CONFIGURATION_BLOCK_WIDTH" description="COM_GAMESERVER_CONFIGURATION_BLOCK_WIDTH_DESC"/>
+
+
+    <field name="serverlistupdateinterval" type="text" default="30" label="COM_GAMESERVER_CONFIGURATION_SERVERLIST_UPDATE_INTERVAL" description="COM_GAMESERVER_CONFIGURATION_SERVERLIST_UPDATE_INTERVAL_DESC" />  
+    
+	</fieldset>
+  <fieldset name="detailview"
+		label="COM_GAMESERVER_CONFIGURATION_DETAILVIEW"
+		description="COM_GAMESERVER_CONFIGURATION_DETAILVIEW_DESC"
+	>
+    <field name="show_mapimages" type="radio" default="1" label="COM_GAMESERVER_CONFIGURATION_SHOWMAPIMAGES" description="COM_GAMESERVER_CONFIGURATION_SHOWMAPIMAGES_DESC">
+      <option value="1">COM_GAMESERVER_CONFIGURATION_SHOWMAPIMAGES_YES</option>
+      <option value="0">COM_GAMESERVER_CONFIGURATION_SHOWMAPIMAGES_NO</option>
+    </field>
+
+    <field name="mapimagewidth" type="text" default="200" label="COM_GAMESERVER_CONFIGURATION_MAP_IMAGE_WIDTH" description="COM_GAMESERVER_CONFIGURATION_MAP_IMAGE_WIDTH_DESC" />
+
+    <field name="detailviewteamview" type="radio" default="1" label="COM_GAMESERVER_CONFIGURATION_DETAILVIEW_TEAMVIEW" description="COM_GAMESERVER_CONFIGURATION_DETAILVIEW_TEAMVIEW_DESC">
+      <option value="1">COM_GAMESERVER_CONFIGURATION_DETAILVIEW_TEAMVIEW_YES</option>
+      <option value="0">COM_GAMESERVER_CONFIGURATION_DETAILVIEW_TEAMVIEW_NO</option>
+    </field>
+   
+    <field name="detailviewautorefresh" type="radio" default="1" label="COM_GAMESERVER_CONFIGURATION_DETAILVIEW_AUTOREFRESH" description="COM_GAMESERVER_CONFIGURATION_DETAILVIEW_AUTOREFRESH_DESC">
+      <option value="1">COM_GAMESERVER_CONFIGURATION_DETAILVIEW_AUTOREFRESH_YES</option>
+      <option value="0">COM_GAMESERVER_CONFIGURATION_DETAILVIEW_AUTOREFRESH_NO</option>
+    </field>    
+    
+    <field name="detailviewupdateinterval" type="text" default="30" label="COM_GAMESERVER_CONFIGURATION_DETAILVIEW_UPDATE_INTERVAL" description="COM_GAMESERVER_CONFIGURATION_DETAILVIEW_UPDATE_INTERVAL_DESC" />
+
+  </fieldset>
+  <fieldset name="addserver"
+             label="COM_GAMESERVER_CONFIGURATION_ADDSERVER"
+             description="COM_GAMESERVER_CONFIGURATION_ADDSERVER_DESC">
+    <field name="addserver_enable" type="radio" default="1" label="COM_GAMESERVER_CONFIGURATION_ADDSERVER_PUBLISH" description="COM_GAMESERVER_CONFIGURATION_ADDSERVER_PUBLISH_DESC">
+      <option value="1">JYES</option>
+      <option value="0">JNO</option>
+    </field>
+    <field
+      name="addservererrormessage"
+      type="editor"
+      label="COM_GAMESERVER_CONFIGURATION_ADDSERVER_ERRORMESSAGE"
+      description="COM_GAMESERVER_CONFIGURATION_ADDSERVER_ERRORMESSAGE_DESC"
+      class="inputbox"
+      filter="JComponentHelper::filterText"
+      buttons="true"
+      hide="readmore,pagebreak"	/>
+  </fieldset>
+  </config>

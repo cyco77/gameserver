@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 8178 2007-07-23 05:39:47Z eddieajau $ -->
+<metadata>
+  <layout title="Single GameServer">
+    <message>
+      <![CDATA[Default GameServer View]]>
+    </message>
+  </layout>
+
+  <fields name="request">
+    <fieldset name="request"
+      addfieldpath="/administrator/components/com_gameserver/models/fields">
+      <field 
+        name="serverid" 
+        type="gameserver"
+        label="COM_GAMESERVER_SELECT_SERVER"
+        required="true"
+        description="COM_GAMESERVER_SELECT_SERVER_DESC"
+			/>
+    </fieldset>
+  </fields>
+</metadata>

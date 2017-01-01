@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 8178 2007-07-23 05:39:47Z eddieajau $ -->
+<metadata>
+	<layout title="Filtered GameServer List">
+		<message>
+			<![CDATA[Detailed GameServer List]]>
+		</message>
+	</layout>
+	<state>
+		<name>Filtered GameServer List</name>
+		<description>Detailed GameServer List</description>
+		<url addpath="/administrator/components/com_gameserver/gameservers">
+			
+		</url>
+	</state>
+  <fields name="request">
+    <fieldset name="request"
+      addfieldpath="/administrator/components/com_gameserver/models/fields">
+      <field
+        name="region"
+        type="gameserverregionfilter"
+        label="COM_GAMESERVER_SELECT_REGION"
+        required="false"
+        description="COM_GAMESERVER_SELECT_REGION_DESC"
+			/>
+      <field
+        name="type"
+        type="gameservertypefilter"
+        label="COM_GAMESERVER_SELECT_TYPE"
+        required="false"
+        description="COM_GAMESERVER_SELECT_TYPE_DESC"
+			/>
+    </fieldset>
+  </fields>
+
+</metadata>

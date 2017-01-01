@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 8178 2007-07-23 05:39:47Z eddieajau $ -->
+<metadata>
+	<layout title="GameServerList">
+		<message>
+			<![CDATA[GameServerList]]>
+		</message>
+	</layout>
+	<state>
+		<name>GameServerList</name>
+		<description>GameServerList</description>
+		<url addpath="/administrator/components/com_gameserver/gameservers">
+			
+		</url>
+	</state>
+  <fields name="request" addfieldpath="/administrator/components/com_gameserver/models/fields">
+    <fieldset name="request">
+      <field
+				name="id"
+				type="gameserverall"
+				label="COM_GAMESERVER_SELECTGAMESERVER_LABEL"
+				description="COM_GAMESERVER_SELECTGAMESERVER_DESC"
+        multiple="multiple"
+			/>
+    </fieldset>
+  </fields>
+  </metadata>

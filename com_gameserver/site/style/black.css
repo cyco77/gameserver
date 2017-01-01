@@ -1,0 +1,304 @@
+/* CSS File für Dark Backgrounds */
+
+.gameserver_gamelogo
+{
+    margin-right: 2px;
+}
+
+.gameserver_detailtable
+{
+     
+}
+
+.gameserver_detailtable_left
+{
+    float: left;
+    width: 100px;
+}
+
+.gameserver_detailtable_center {
+    margin-left: 100px;
+}
+
+.gameserver_detailtable_right
+{
+    float: right;
+}
+
+.gameserver_table
+{
+    border: 0px;
+}
+
+@media all and (max-width: 600px) {
+
+    .gameserver_detailtable {
+        text-align: center;
+    }
+
+    .gameserver_detailtable_left {
+        float: none;
+        display: none;
+    }
+
+    .gameserver_detailtable_center {
+        margin: 0px !important;
+    }
+
+    .gameserver_detailtable_right {
+        float: none;
+        margin: 5px;
+    }
+}
+
+#loading
+{
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #404040;
+    background-color: #0D1C39;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 20px;
+}
+
+.gameserver_value
+{
+    padding: 3px;
+    border: 1px solid #404040;
+    vertical-align: middle;
+}
+
+.gameserver_value_right
+{
+    padding: 3px;
+    border: 1px solid #404040;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.gameserver_value_center
+{
+    padding: 3px;
+    border: 1px solid #404040;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.gameserver_titel_right
+{
+    font-weight: bold;
+    padding: 4px;
+    background-color: #2B2B2B;
+    border: 1px solid #404040;
+    text-align: right;
+}
+
+.gameserver_titel_center
+{
+    font-weight: bold;
+    padding: 4px;
+    background-color: #2B2B2B;
+    border: 1px solid #404040;
+    text-align: center;
+}
+
+.gameserver_titel
+{
+    font-weight: bold;
+    padding: 4px;
+    background-color: #2B2B2B;
+    border: 1px solid #404040;
+}
+
+.gameserver_line
+{
+    height: 14px;
+    background-color: #404040;
+    padding: 3px;
+}
+
+/* Gameservers */
+
+.gameserverlist tr td {
+    border: 0px;
+}
+
+.gameserverlist_logo {
+    margin: 2px;
+}
+
+.gameserverlist_logo_link {
+    
+}
+
+.gameserverlist_servername_link {
+    margin: 2px;
+}
+
+.gameserverlist_serveraddress {
+    margin: 2px;
+}
+
+.gameserverlist_map {
+    margin: 2px;
+}
+
+.gameserverlist_onlineimage {
+    
+}
+
+.gameserverlist_onlineimage img {
+    margin: 3px;
+    min-width: 16px;
+}
+
+.gameserverlist_serverstatus {
+    white-space: nowrap;
+}
+
+.gameserverlist_loading {
+    display: none;   
+}
+
+/* Filtered Serverlist */
+
+.filteredserverlist_filter {
+    
+}
+
+.filteredserverlist_filter select {
+    margin: 5px;
+}
+
+.filteredserverlist_items
+{
+}
+
+.filteredserverlist_item
+{
+    background-color: #2B2B2B;
+    background-repeat: repeat-x;
+    width: 99%;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+    margin-bottom: 5px;
+}
+
+.filteredserverlist_serverdata
+{
+    width: 100%;
+    clear: both;
+    display: inline-block;
+}
+
+.filteredserverlist_logo
+{
+    float: left;
+    margin: 5px;
+    text-align: center;
+}
+
+.filteredserverlist_serverdata_name
+{
+    font-weight: bold;
+    margin: 8px;
+    float: left;
+}
+
+.filteredserverlist_loading {
+    width: 20px;
+    float: right;
+    margin: 3px 0px;
+    display: none;
+}
+
+.filteredserverlist_serverdata_address
+{
+    white-space: nowrap;
+    vertical-align: middle;
+    float: left;
+    margin-left: 8px;
+}
+
+.filteredserverlist_serverdata_address div 
+{
+    float: left;
+}
+
+.filteredserverlist_serverdata_onlineimage {
+    margin-left: 5px;
+    float: left; 
+}
+
+.filteredserverlist_serverdata_onlineimage img {
+    margin-left: 4px;
+    margin-bottom: 5px;
+}
+
+.filteredserverlist_serverdata_address img
+{
+    vertical-align: middle;
+    float: left;
+    margin-top: 1px;
+    margin-left: 8px;
+}
+
+.filteredserverlist_serverdata_mapname
+{
+    float: left;
+    padding-left: 10px;
+}
+
+.filteredserverlist_serverdata_playersonline
+{
+    float: left;
+    padding-left: 10px;
+}
+
+/* TABS */
+
+
+dl.tabs
+{
+    float: left;
+    margin: 10px 0 -1px 0;
+    z-index: 50;
+}
+
+dl.tabs dt
+{
+    float: left;
+    padding: 4px 10px;
+    border-left: 1px solid #636363;
+    border-right: 1px solid #636363;
+    border-top: 1px solid #636363;
+    margin-left: 3px;
+    background: #484848;
+    color: #dcdcdc;
+}
+
+dl.tabs dt.open
+{
+    background: #222323;
+    border-bottom: 1px solid #222323;
+    z-index: 100;
+    color: #FFF;
+}
+
+div.current
+{
+    clear: both;
+    border: 1px solid #636363;
+    padding: 10px 10px;
+}
+
+div.current dd
+{
+    padding: 0;
+    margin: 0;
+}

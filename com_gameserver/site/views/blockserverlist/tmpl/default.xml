@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 8178 2007-07-23 05:39:47Z eddieajau $ -->
+<metadata>
+	<layout title="Block GameServer List">
+		<message>
+			<![CDATA[Block GameServer List]]>
+		</message>
+	</layout>
+	<state>
+		<name>Block GameServer List</name>
+		<description>Block GameServer List</description>
+		<url addpath="/administrator/components/com_gameserver/gameservers">
+			
+		</url>
+	</state>
+</metadata>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 8178 2007-07-23 05:39:47Z eddieajau $ -->
+<metadata>
+  <layout title="GameServer Tester">
+    <message>
+      <![CDATA[GameServer Tester]]>
+    </message>
+  </layout>
+  <state>
+    <name>GameServer Tester</name>
+    <description>GameServer Tester</description>
+  </state>
+</metadata>

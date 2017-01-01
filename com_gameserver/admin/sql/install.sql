@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `#__gameserver` (
+  `serverid` int(11) NOT NULL auto_increment,
+  `displayname` varchar(255) NOT NULL default '',
+  `type` varchar(255) NOT NULL default '0',
+  `ip` varchar(50) NOT NULL default '',
+  `port` varchar(10) NOT NULL default '',
+  `port2` varchar(10) NOT NULL default '',
+  `ordering` int(11) NOT NULL default '0',
+  `published` tinyint(1) NOT NULL default '0',
+  `user` varchar(255) NULL default '',
+  `pass` varchar(255) NULL default '',
+  `url` varchar(1000) NULL default '',
+  `addedby` int NULL,
+  `description` LONGTEXT NULL,
+  `cachedserverdata` text NULL,
+  `cachedatetime` timestamp NULL default CURRENT_TIMESTAMP,
+  `showsettings` tinyint(4) NOT NULL default '1',
+  `region` varchar(255) NULL default '',
+  `country` varchar(255) NULL default '',
+  PRIMARY KEY  (`serverid`)      
+)
