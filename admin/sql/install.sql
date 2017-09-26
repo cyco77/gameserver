@@ -12,10 +12,10 @@ CREATE TABLE IF NOT EXISTS `#__gameserver` (
   `url` varchar(1000) NULL default '',
   `addedby` int NULL,
   `description` LONGTEXT NULL,
-  `cachedserverdata` text NULL,
+  `cachedserverdata` mediumtext NULL,
   `cachedatetime` timestamp NULL default CURRENT_TIMESTAMP,
   `showsettings` tinyint(4) NOT NULL default '1',
   `region` varchar(255) NULL default '',
   `country` varchar(255) NULL default '',
-  PRIMARY KEY  (`serverid`)      
+  PRIMARY KEY  (`serverid`)
 )

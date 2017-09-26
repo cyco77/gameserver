@@ -6,7 +6,7 @@
 	<authorEmail>info@larshildebrandt.de</authorEmail>
 	<authorUrl>http://www.larshildebrandt.de</authorUrl>
 	<license>GNU/GPL</license>
-	<version>3.4.2</version>
+	<version>3.4.3</version>
 	<description>Komponente fuer das Anzeigen von verschiedenen Gameservern.</description>	
 	<install>
 		<sql>
